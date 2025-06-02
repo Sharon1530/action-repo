@@ -30,4 +30,3 @@ jobs:
                      \"repository\": \"$REPO\",
                      \"sender\": \"$SENDER\"
                    }"
-                   }"

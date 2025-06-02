@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+
   pull_request:
     types:
-      - closed
+      - closed  # Includes merged PRs
 
 jobs:
   send-webhook:
@@ -28,4 +29,5 @@ jobs:
                      \"merged\": \"$MERGED\",
                      \"repository\": \"$REPO\",
                      \"sender\": \"$SENDER\"
+                   }"
                    }"

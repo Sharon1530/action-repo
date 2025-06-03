@@ -26,7 +26,6 @@ jobs:
           TO_BRANCH: ${{ github.event.pull_request.base.ref || '' }}
           PUSH_BRANCH: ${{ github.ref_name || '' }}
         run: |
-          # Determine branch depending on event type
           if [ "$EVENT" = "push" ]; then
             FROM_BRANCH="$PUSH_BRANCH"
             TO_BRANCH="$PUSH_BRANCH"
